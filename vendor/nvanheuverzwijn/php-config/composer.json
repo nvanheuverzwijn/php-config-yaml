@@ -1,0 +1,29 @@
+{
+    "name": "nvanheuverzwijn/php-config",
+    "description": "A generic configuration loader library not specifically based on files",
+    "keywords": ["config", "configuration"],
+    "homepage": "http://github.com/nvanheuverzwijn/php-config",
+    "type": "library",
+    "license": "LGPL3.0",
+    "authors": [
+        {
+            "name": "Nicolas Vanheuverzwijn",
+            "email": "nicolas.vanheu@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "autoload": {
+        "psr-4": {"Zwijn\\Config\\": "src/Config"}
+    },
+    "autoload-dev": {
+        "psr-4": {"ZwijnTests\\Config\\": "tests/Config"}
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}
